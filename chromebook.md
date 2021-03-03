@@ -92,3 +92,13 @@ tar zxvf julia-1.5.3-linux-x86_64.tar.gz
 ``
 PATH = "julia-1.5.3/bin:$PATH"
 ``
+
+### IJulia
+
+notebookで使えるように、これだけはまず入れておく。
+
+``julia`` 起動して、``Pkg`` モードで
+
+```
+add IJulia
+```
