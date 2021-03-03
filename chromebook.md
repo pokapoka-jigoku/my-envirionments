@@ -20,27 +20,60 @@ https://www.anaconda.com/products/individual#linux
 
 ### 環境構築 ``me``
 
-``conda create -n default-lite python=3.8 numpy scipy pandas matplotlib seaborn bokeh scikit-learn nodejs notebook jupyterlab -c conda-forge``
+入れるものとしては：
 
-あとは、
+- 基本
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+- グラフ
+  - matplotlib
+  - seaborn
+  - bokeh
+- Jupyter系
+  - notebook
+  - jupyterlab
+  - nodejs
+
+```
+conda create -n me python=3.8 numpy scipy pandas matplotlib seaborn bokeh scikit-learn nodejs notebook jupyterlab -c conda-forge
+```
+
+あとは、任意だが、UMAPのモジュール：
 
 ``conda install -c conda-forge umap-learn``
 
-``jupyter labextension install @jupyterlab/toc @lckr/jupyterlab_variableinspector @kiteco/jupyterlab-kite @jupyter-widgets/jupyterlab-manager``
 
+あ、notebook用のウィジェット用
+
+```
+pip install ipywidgets
+jupyter nbextension enable --py widgetsnbextension
+```
+
+
+Jupyterのエクステンションもめぼしいものは入れておくといいかも：
+
+``jupyter labextension install @jupyterlab/toc @lckr/jupyterlab_variableinspector @jupyter-widgets/jupyterlab-manager``
+
+
+Kiteを使うなら下の２つも：
+
+``jupyter labextension install @kiteco/jupyterlab-kite ``
 ``pip install jupyter-kite``
 
-``pip install ipywidgets``
 
-``jupyter nbextension enable --py widgetsnbextension``
 
 下は機械学習系：
 
-``pip install jax jaxlib``
+```
+pip install jax jaxlib
+pip install tensorflow
+pip install numpyro
+```
 
-``pip install tensorflow``（numpyがダウングレードするかも）
-
-``pip install numpyro``（jaxがダウングレードするかも）
+上のインストールでnumpy（tensorflow由来）、jax（numpyro由来）がダウングレードするかも。
 
 
 ## Julia
