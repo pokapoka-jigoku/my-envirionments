@@ -9,6 +9,10 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+日本語入力できるようにするなら、以下参考？：
+
+https://qiita.com/suzuki_sh/items/adead0fd9adefec112af
+
 ## git
 
 ```
@@ -110,6 +114,8 @@ tar zxvf julia-1.5.3-linux-x86_64.tar.gz
 export PATH="/home/$USER/julia-1.5.3/bin:$PATH"
 ``
 
+juliaは基本的にREPLでパッケージ管理もできるし、逐一必要なやつ入れていけばOK
+
 ### IJulia
 
 notebookで使えるように、これだけはまず入れておく。
@@ -119,3 +125,12 @@ notebookで使えるように、これだけはまず入れておく。
 ```
 add IJulia
 ```
+
+### プロジェクト系
+
+```
+add PkgTemplates
+add Revise
+```
+
+See: https://qiita.com/mametank/items/43330a9452f0039ca22d
