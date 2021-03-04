@@ -9,6 +9,13 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+## git
+
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
 ## Python
 
 ### ``conda``
