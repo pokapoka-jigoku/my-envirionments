@@ -99,7 +99,7 @@ tar zxvf julia-1.5.3-linux-x86_64.tar.gz
 ``vi .bashrc``
 
 ``
-PATH = "julia-1.5.3/bin:$PATH"
+PATH = "/HOME/$USER/julia-1.5.3/bin:$PATH"
 ``
 
 ### IJulia
