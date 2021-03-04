@@ -70,6 +70,7 @@ Jupyterのエクステンションもめぼしいものは入れておくとい�
 Kiteを使うなら下の２つも：
 
 ``jupyter labextension install @kiteco/jupyterlab-kite ``
+
 ``pip install jupyter-kite``
 
 
@@ -99,7 +100,7 @@ tar zxvf julia-1.5.3-linux-x86_64.tar.gz
 ``vi .bashrc``
 
 ``
-PATH = "/HOME/$USER/julia-1.5.3/bin:$PATH"
+export PATH="/home/$USER/julia-1.5.3/bin:$PATH"
 ``
 
 ### IJulia
