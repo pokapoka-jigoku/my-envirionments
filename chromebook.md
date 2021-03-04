@@ -1,5 +1,14 @@
 # my chromebook environment
 
+## bash
+
+基本所作。
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
 ## Python
 
 ### ``conda``
