@@ -20,6 +20,12 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
+## VSCode
+
+普通に入れましょう
+
+https://qiita.com/s1r/items/c0977bd3c5d6244ba829
+
 ## Python
 
 ### ``conda``
