@@ -13,6 +13,33 @@ sudo apt-get upgrade
 
 https://qiita.com/suzuki_sh/items/adead0fd9adefec112af
 
+- Install IPA font
+
+```
+sudo apt install fonts-ipafont fonts-ipaexfont
+```
+
+- Install Myrica font: need to move ``~/.fonts``
+
+```
+mkdir /tmp/fonts; cd $_
+wget https://github.com/tomokuni/Myrica/raw/master/product/Myrica.zip
+unzip Myrica.zip
+mv ./Myrica.TTC ~/.fonts/
+fc-cache --force --verbose
+```
+
+- Setup
+
+Use ``fcitx-mozc``.
+
+```
+$ sudo apt install fcitx-mozc
+```
+
+
+
+
 ## git
 
 ```
