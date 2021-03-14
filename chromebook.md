@@ -51,6 +51,16 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
+## Docker
+
+このQiita参考にする：
+
+https://qiita.com/pyama2000/items/90b189964f71def53b19#docker%E9%96%A2%E9%80%A3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
+
+あるいは公式の説明（多分一緒）
+
+https://docs.docker.com/engine/install/ubuntu/
+
 ## VSCode
 
 普通に入れましょう
