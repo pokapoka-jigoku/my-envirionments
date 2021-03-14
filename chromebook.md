@@ -13,13 +13,13 @@ sudo apt-get upgrade
 
 https://qiita.com/suzuki_sh/items/adead0fd9adefec112af
 
-- Install IPA font
+### IPAフォントのインストール
 
 ```
 sudo apt install fonts-ipafont fonts-ipaexfont
 ```
 
-- Install Myrica font: need to move ``~/.fonts``
+### Myricaフォントのインストール。 ``~/.fonts``に移動させる。
 
 ```
 mkdir /tmp/fonts; cd $_
@@ -29,15 +29,17 @@ mv ./Myrica.TTC ~/.fonts/
 fc-cache --force --verbose
 ```
 
-- Setup
+### セットアップ
 
-Use ``fcitx-mozc``.
+``fcitx-mozc``を使う。
 
 ```
 $ sudo apt install fcitx-mozc
 ```
 
+…あとはさっきの記事を見て設定！：
 
+https://qiita.com/suzuki_sh/items/adead0fd9adefec112af#%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97
 
 
 ## git
@@ -61,13 +63,23 @@ https://qiita.com/s1r/items/c0977bd3c5d6244ba829
 
 https://www.anaconda.com/products/individual#linux
 
-適当なところに``.sh``入れて、
+適当なところに``.sh``ダウンロードする。
 
-``bash ***.sh``
+あるいは``wget``で、
+
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+```
+
+```
+bash ***.sh
+```
 
 でよしなにインストール。シェル再起動して、
 
-``conda -V``
+```
+conda -V
+```
 
 でインストールできているか確認。
 
