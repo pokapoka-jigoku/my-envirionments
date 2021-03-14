@@ -5,6 +5,9 @@
 
 なんなんだこれは
 
+https://github.com/elyra-ai/elyra
+
+
 ```
 conda install -c conda-forge "elyra>=2.0.1" && jupyter lab build
 ```
