@@ -9,6 +9,7 @@
 conda install -c conda-forge "elyra>=2.0.1" && jupyter lab build
 ```
 
+ノートブックのパイプラインを作れるっぽい…？
 
 ## git
 
