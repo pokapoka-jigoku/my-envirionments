@@ -45,6 +45,8 @@ https://qiita.com/suzuki_sh/items/adead0fd9adefec112af#%E6%97%A5%E6%9C%AC%E8%AA%
 ## git
 
 ```
+sudo apt-get install git
+
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
