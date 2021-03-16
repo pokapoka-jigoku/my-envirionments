@@ -114,8 +114,16 @@ conda -V
   - nodejs
 
 ```
-conda create -n me python=3.8 numpy scipy pandas matplotlib seaborn bokeh scikit-learn nodejs notebook jupyterlab -c conda-forge
+conda create -n me python=3.9 numpy scipy pandas matplotlib seaborn bokeh scikit-learn nodejs notebook jupyterlab -c conda-forge
 ```
+
+最近、jupyterlab V3 が登場したが、gitまわりが現状追いついてない（2021/3/16)
+その場合は、
+
+```
+conda create -n me python=3.9 numpy scipy pandas matplotlib seaborn bokeh scikit-learn nodejs notebook jupyterlab=2 -c conda-forge
+```
+
 
 あとは、任意だが、UMAPのモジュール：
 
